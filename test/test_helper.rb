@@ -86,7 +86,7 @@ module ActiveMerchant
                                       :address1 => '110 Laurier Avenue West',
                                       :postal_code => 'K1P 1J1',
                                       :phone => '1-613-580-2400',
-                                      :fax => '1-613-580-2495'),
+                                      :fax => '16135802495'),
         :beverly_hills => Location.new(
                                       :country => 'US',
                                       :state => 'CA',
@@ -94,8 +94,9 @@ module ActiveMerchant
                                       :address1 => '455 N. Rexford Dr.',
                                       :address2 => '3rd Floor',
                                       :zip => '90210',
-                                      :phone => '1-310-285-1013',
-                                      :fax => '1-310-275-8159'),
+                                      :phone => '13102851013',
+                                      :fax => '1-310-275-8159',
+                                      :contact_name => 'Matt Newberry'),
         :real_home_as_commercial => Location.new(
                                       :country => 'US',
                                       :city => 'Tampa',
@@ -161,6 +162,8 @@ module ActiveMerchant
                                       :state => 'NY',
                                       :address1 => '780 3rd Avenue',
                                       :address2 => 'Suite  2601',
+                                      :contact_name => 'Matt Newberry',
+                                      :phone => '14236677723',
                                       :zip => '10017')
                                       
       }

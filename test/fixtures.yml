@@ -5,9 +5,11 @@ ups:
   login: UPSDotComLogin
   password: UPSDotComPassword
 fedex:
-  login: FedExAccountNumber
-  password: FedExMeterNumber
+  login: 100011759
+  password: CCuao3PtJKF02JpJ479c2yiGm
   test: true
+  key: pFQVaSi2gpDxUDRF
+  account: 510087224
 shipwire:
   login: EmailAddress
   password: Password

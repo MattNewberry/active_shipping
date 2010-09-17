@@ -11,6 +11,23 @@ class FedExTest < Test::Unit::TestCase
   def test_valid_credentials
     assert @carrier.valid_credentials?
   end
+  
+  def test_shipment_ground_domestic
+    response = nil
+    assert_nothing_raised do      
+      response = @carrier.create_shipment(
+                  @locations[:beverly_hills],
+                  @locations[:new_york],
+                  @packages.values_at(:wii),
+                  'FEDEX_GROUND'
+                )
+                
+      f = File.new('/Users/matt/Desktop/label.png', 'w')
+      f.write(response.label)
+      f.close
+    end
+    
+  end
     
   def test_us_to_canada
     response = nil
